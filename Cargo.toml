@@ -1,0 +1,16 @@
+[package]
+name = "status_list_herd"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "Apache-2.0"
+description = "Size, verification time, freshness and herd-size sweep of IETF Token Status Lists (draft-ietf-oauth-status-list-21)"
+publish = false
+
+[dependencies]
+affinidi-status-list = "=0.1.7"
+base64 = "0.22"
+flate2 = "1"
+p256 = { version = "0.13", features = ["ecdsa"] }
+serde_json = "1"
+sha2 = "0.10"
